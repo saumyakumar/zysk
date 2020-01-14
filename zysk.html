@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      body{
+        border: .5rem solid #343a40;
+        border-bottom: 0;
+        min-height: 100vh;
+        font-family: sans-serif;
+      }
+      .header{
+        font-size: 50px;
+      }
+      .bor{
+        border-bottom: 8px red solid;
+        width: 6%;
+      }
+      .bor-sub2{
+        border-bottom: 8px red solid;
+        width: 3%;
+      }
+        .navbar-nav > li{
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        .btn{
+          font-weight: 800;
+          width: 11em;
+        }
+        .btn-dark{
+          color: #84f3ec;
+        }
+        .btn-danger{
+          color: black;
+        }
+        .link{
+          color: red;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .img-fluid{
+          border-radius: 6px;
+        }
+        .title{
+          text-transform: uppercase;
+          font-size: 20px;
+          text-align: left;
+          font-weight: 600;
+          color: black;
+          margin-bottom: 3px;
+          margin-top: 10px;
+        }
+        .text-dark{
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .service-thumb{
+          transition: 1s;
+        }
+        .service-thumb:hover {
+          transform: scale(1.1);
+        }
+        p{
+          font-size: 15px;
+          font-weight: 540;
+        }
+        .footer{
+          color: #84f3ec;
+
+        }
+    </style>
+    <title>Zysk Technologies</title>
+    <link rel="icon" href="zysklogo.jpg" type="image/icon type">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3">
+      <a class="navbar-brand" href="#">
+        <img src="zysk.jpg" alt="zysk" />
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse font-weight-bold ml-auto" id="navMain">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">websites</a>
+                <a class="dropdown-item" href="#">custom application</a>
+                <a class="dropdown-item" href="#">frontend development</a>
+                <a class="dropdown-item" href="#">QA Service</a>
+                <a class="dropdown-item" href="#">Hybrid App Development</a>
+                <a class="dropdown-item" href="#">Support & maintainance</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="font-weight-bold header">Great Service<br>Great Results</h1>
+        <div class="bor mb-3"></div>
+        <p>Unleash the power of the web with our expertise to grow your business.</p>
+        <div class="mt-3">
+          <a href="#" class="btn btn-dark mr-lg-4">Read More</a>
+          <a href="#" class="btn btn-danger">Hire Us</a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <img src="pic1.jpg" class="img-fluid" alt="great service">
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row justify-content-around align-items-center">
+      <div class="col-lg-6">
+        <h1 class="font-weight-bold d-lg-none d-block">Who we are</h1>
+        <img src="pic2.jpg" class="img-fluid" alt="who we are">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="font-weight-bold d-lg-block d-none">Who we are</h1>
+        <div class="bor d-lg-block d-none mb-3"></div>
+        <p class="pt-2">
+          We are an IT services start-up based out of Bangalore, India. We specialize in providing software solutions
+          that are both efficient and intuitive at the same time. Our team of qualified professionals use tried and
+          tested development processes to achieve an amazing combination of speed, quality and precision.
+        </p>
+        <a href="https://www.google.com/" class="btn btn-danger">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <h1 class="font-weight-bold">What we do</h1>
+    <div class="bor-sub2 mb-3"></div>
+    <div class="d-flex flex-wrap">
+
+      <div class="service-thumb text-dark col-lg-4 col-sm-6 ">
+        <img src="webdevelop1.jpg" class="img-fluid" alt="website">
+        <h2 class="title">Website Development</h2>
+        <p>In the era of ubiquitous computing, a Business portfolio optimized for devices of all sizes is a must! With
+        the use of frameworks like Gatsby...</p>
+        <a class="link" href="#">Read more</a>
+    </div>
+
+    <div class="service-thumb text-dark col-lg-4 col-sm-6">
+      <img src="prodevelop.jpg" class="img-fluid" alt="product">
+      <h2 class="title">Product Development</h2>
+      <p>Have an idea and need a 'Technology partner' to bring your idea to life? With our expertise of developing
+        applications from scratch, you...</p>
+      <a class="link" href="#">Read more</a>
+    </div>
+
+    <div class="service-thumb text-dark col-lg-4 col-sm-6">
+      <img src="pic3.jpg" class="img-fluid" alt="frontend">
+      <h2 class="title">Front-end Development</h2>
+      <p>Our expertise with Angular and React.js will ensure that your Back-end APIs will get best User Interfaces
+        without comprimising the user...</p>
+      <a class="link" href="#">Read more</a>
+    </div>
+
+    <div class="service-thumb text-dark col-lg-4 col-sm-6">
+      <img src="quality.jpg" class="img-fluid illustration" alt="quality">
+      <h2 class="title">QA & Testing Services</h2>
+      <p>An important part of User Experience is an applications without bugs. Our QA services, both Manual and
+        Automation, will work as an exten...</p>
+      <a class="link" href="#">Read more</a>
+    </div>
+
+    <div class="service-thumb text-dark col-lg-4 col-sm-6">
+      <img src="app.jpg" class="img-fluid" alt="app development">
+      <h2 class="title">Hybrid App Development</h2>
+      <p>Don't want the hassle of managing two versions (Android and iOS) of the same app? Hybrid Apps is the answer
+        for that, with Facebook and...</p>
+      <a class="link" href="#">Read more</a>
+    </div>
+
+    <div class="service-thumb text-dark col-lg-4 col-sm-6">
+      <img src="support.jpg" class="img-fluid" alt="support">
+      <h2 class="title">Support & Maintenance</h2>
+      <p>Our dedicated support team can handle your customer tickets and well as work on your application to help you
+        add new features to... </p>
+      <a class="link" href="#">Read more</a>
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer p-3 text-center bg-dark">
+   &copy; 2019 Zysk Technologies
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
