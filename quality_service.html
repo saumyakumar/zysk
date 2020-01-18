@@ -8,8 +8,12 @@
       body{
         border: .5rem solid #343a40;
         border-bottom: 0;
+        border-top: 0;
         min-height: 100vh;
         font-family: sans-serif;
+      }
+      .header{
+        font-size: 50px;
       }
       .bor{
         border-bottom: 8px #dc3545 solid;
@@ -43,7 +47,7 @@
         }
         .title{
           text-transform: uppercase;
-          font-size: 1rem;
+          font-size: 18px;
           font-weight: 800;
           color: #dc3545;
           margin-bottom: 15px;
@@ -70,25 +74,27 @@
           font-size: 50px;
           font-weight: 900;
         }
-        .description {
-          max-width: 24rem;
-        }
         .illustration {
-          max-height: 16rem;
+          max-height: 15rem;
           max-width: 24rem;
         }
         .content{
-          margin-right: 50px;
+          max-width: 24rem;
         }
         .container-fluid {
           max-width: 80rem;
+        }
+        .highlight{
+          font-style: italic;
+          font-size: 20px;
+          font-family: monospace;
         }
     </style>
     <title>Zysk Technologies</title>
     <link rel="icon" href="zysklogo.jpg" type="image/icon type">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-2">
       <a class="navbar-brand" href="zysk.html">
         <img src="zysk.jpg" alt="zysk" />
       </a>
@@ -102,7 +108,7 @@
               <a class="nav-link" href="zysk.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
@@ -110,7 +116,7 @@
                 <a class="dropdown-item" href="websites.html">websites</a>
                 <a class="dropdown-item" href="custom_appli.html">custom application</a>
                 <a class="dropdown-item" href="frontend_develop.html">frontend development</a>
-                <a class="dropdown-item" href="quality_service.html">QA Service</a>
+                <a class="dropdown-item" href="#">QA Service</a>
                 <a class="dropdown-item" href="hybrid_app.html">Hybrid App Development</a>
                 <a class="dropdown-item" href="support.html">Support & maintainance</a>
               </div>
@@ -122,88 +128,31 @@
         </div>
     </nav>
 
-    <section class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="font-weight-bold d-lg-none d-block">About Us</h1>
-          <img src="about.jpg" class="img-fluid" alt="about us">
-        </div>
-        <div class="col-lg-6">
-          <h1 class="font-weight-bold d-lg-block d-none">About Us</h1>
-          <div class="bor d-lg-block d-none mb-3"></div>
-          <p class="pt-2">
-            Zysk Technologies is a web and mobile application development company located in the IT heartland of
-            Bangalore, India. Our primary focus is providing professional, cost effective road maps and solutions for our
-            clients projects. We offer a variety of services like web design, web development, app development, search
-            engine optimization and social media management. With a team of qualified professionals, we are dedicated to
-            delivering quality services for the success of our client's projects.
-          </p>
-          <div>
-            <a href="#why-us" class="btn btn-dark mr-lg-4">Read More</a>
-            <a href="#" class="btn btn-danger">Hire Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-us" class="container-fluid py-4">
-      <h1 class="font-weight-bold">Why Us</h1>
-      <div class="bor-sub d-lg-block d-none mb-3"></div>
-      <div class="d-flex flex-wrap flex-md-nowrap align-items-center">
-        <h1 class="count mr-5">01</h1>
-        <div class="content">
-          <h1 class="title">upto date with technology</h1>
-          <p class="description">
-            The world today, particularly in the context of technology is moving at turbo speed. Your business stands
-            the risk of becoming obsolete unless you keep up with all the developments in your industry. With the use of
-            the latest and most effective technologies, we'll help ensure that your business always stays relevant to your
-            audience.
-          </p>
-        </div>
-        <img src="uptodate.jpg" class="img-fluid illustration" alt="upto date">
-      </div>
-    </section>
-
     <section class="container-fluid py-4">
-      <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-end">
-        <h1 class="count mr-5">02</h1>
+      <div class="d-flex flex-wrap justify-content-around">
+        <img src="quality.jpg" class="img-fluid illustration mb-3" alt="quality assurance">
         <div class="content">
-          <h1 class="title">great service</h1>
-          <p class="description">
-            Our team of designers and developers boast a strong knowledge of programming languages and the variety of
-            skills they bring to the table makes us versatile. It helps us meet new challenges and add value to your
-            business.
+          <h1 class="font-weight-bold d-lg-block">Services</h1>
+          <div class="bor d-lg-block mb-3"></div>
+          <h1 class="title">QA & Testing Services</h1>
+          <p class="highlight">
+           Quality Assurance (QA) is defined as an activity to ensure that an organization is providing the best possible product or service to customers.
+           QA focuses on improving the processes to deliver Quality Products to the customer
+          </p>
+          <p>
+            QA includes activities that ensure the implementation of processes,
+            procedures and standards in context to verification of developed software and intended requirements.
+          </p>
+          <p>
+            Focuses on processes and procedures rather than conducting actual testing on the system.
+            Process-oriented activities. Preventive activities.
           </p>
         </div>
-        <img src="service.jpg" class="img-fluid illustration" alt="service">
-      </div>
-    </section>
-
-    <section class="container-fluid py-4">
-      <div class="d-flex flex-wrap flex-md-nowrap align-items-center">
-        <h1 class="count mr-5">03</h1>
         <div class="content">
-          <h1 class="title">deliver top quality application</h1>
-          <p class="description">
-            Be it design, UX or optimization, we ensure that you only get the best websites and applications when you
-           engage our services. Our prompt support and maintenance services have won us the admiration of clients.
-          </p>
+        <p class="highlight">
+          Our understanding of Quality assurance is a way of preventing mistakes and defects in manufactured products and avoiding problems when delivering products or services to customers.
+        </p>
         </div>
-        <img src="delivery.jpg" class="img-fluid illustration" alt="deliver top quality">
-      </div>
-    </section>
-
-    <section class="container-fluid py-4">
-      <div class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-end">
-        <h1 class="count mr-5">04</h1>
-        <div class="content">
-          <h1 class="title">enthusiam and innovation</h1>
-          <p class="description">
-            More than anything else, our passion for all things tech drives us to learn more and do more. We love to
-           explore new problem-solving approaches, which help us offer the simplest, most innovative solutions.
-          </p>
-        </div>
-        <img src="innovation.jpg" class="img-fluid illustration" alt="innovation">
       </div>
     </section>
 
