@@ -4,99 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-      body{
-        border: .5rem solid #343a40;
-        border-bottom: 0;
-        border-top: 0;
-        min-height: 100vh;
-        font-family: sans-serif;
-      }
-      .header{
-        font-size: 50px;
-      }
-      .bor{
-        border-bottom: 8px #dc3545 solid;
-        width: 6%;
-      }
-      .bor-sub{
-        border-bottom: 8px #dc3545 solid;
-        width: 3%;
-      }
-        .navbar-nav > li{
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-        .btn{
-          font-weight: 800;
-          width: 11em;
-        }
-        .btn-dark{
-          color: #84f3ec;
-        }
-        .btn-danger{
-          color: black;
-        }
-        .link{
-          color: red;
-          font-weight: 600;
-          text-transform: uppercase;
-        }
-        .img-fluid{
-          border-radius: 6px;
-        }
-        .title{
-          text-transform: uppercase;
-          font-size: 18px;
-          font-weight: 800;
-          color: #dc3545;
-          margin-bottom: 15px;
-        }
-        .text-dark{
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-        .service-thumb{
-          transition: 1s;
-        }
-        .service-thumb:hover {
-          transform: scale(1.1);
-        }
-        p{
-          font-size: 15px;
-          font-weight: 540;
-        }
-        .footer{
-          color: #84f3ec;
-        }
-        .count{
-          color: #dc3545;
-          font-size: 50px;
-          font-weight: 900;
-        }
-        .illustration {
-          max-height: 15rem;
-          max-width: 24rem;
-        }
-        .content{
-          max-width: 24rem;
-        }
-        .container-fluid {
-          max-width: 80rem;
-        }
-        .highlight{
-          font-style: italic;
-          font-size: 20px;
-          font-family: monospace;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/services_css/services.css">
     <title>Zysk Technologies</title>
-    <link rel="icon" href="zysklogo.jpg" type="image/icon type">
+    <link rel="icon" href="../../images/zysklogo.jpg" type="image/icon type">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-2">
-      <a class="navbar-brand" href="zysk.html">
-        <img src="zysk.jpg" alt="zysk" />
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3">
+      <a class="navbar-brand" href="../../zysk.html">
+        <img src="../../images/zysk.jpg" alt="zysk" />
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navMain">
         <span class="navbar-toggler-icon"></span>
@@ -105,10 +21,10 @@
         <div class="collapse navbar-collapse font-weight-bold ml-auto" id="navMain">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="zysk.html">Home</a>
+              <a class="nav-link" href="../../zysk.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="../about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
@@ -122,40 +38,40 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="../contact.html">Contact</a>
             </li>
           </ul>
         </div>
     </nav>
 
-    <section class="container-fluid py-4">
+    <section class="container-fluid py-5">
       <div class="d-flex flex-wrap justify-content-around">
-        <img src="hybrid_app.jpg" class="img-fluid illustration mb-3" alt="hybrid app development">
-        <div class="content">
+        <img src="../../images/hybrid_app.jpg" class="img-fluid illustration mb-3" alt="hybrid app development">
+        <div class="content-width">
           <h1 class="font-weight-bold d-lg-block">Services</h1>
-          <div class="bor d-lg-block mb-3"></div>
-          <h1 class="title">hybrid mobile development</h1>
-          <p class="highlight">
+          <div class="underline-m d-lg-block mb-3"></div>
+          <h1 class="title-m-red">hybrid mobile development</h1>
+          <p class="description highlight">
             For businesses looking to maximize their chances of success, targeting mobile devices can mean the
             difference between success and obscurity.
           </p>
-          <p>
+          <p class="description">
             Our user-centric designs, and cost-effective hybrid mobile app solutions are perfect for your next big product
             idea. We develop cross-platform apps using a single codebase with the help of popular hybrid application
             frameworks like Ionic and React Native.
           </p>
-          <p>
+          <p class="description">
             “Cross-platform” goes beyond just iOS and Android, it means a consistent and intuitive user experience across
             mobile and desktop, web and app store, phone and tablet.
           </p>
         </div>
-        <div class="content">
-        <p class="highlight">
+        <div class="content-width">
+        <p class="description highlight">
           According to recent reports, Hybrid mobile apps are beginning to dominate the app stores. Leading this trend
           are apps like Facebook, Walmart, Bloomberg and Instagram. Hybrid Mobile Apps are the new age solution for the
           new-age company.
         </p>
-        <p>
+        <p class="description">
            We have extensive experience in working with:
         </p>
         </div>
@@ -166,7 +82,6 @@
    &copy; 2019 Zysk Technologies
  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

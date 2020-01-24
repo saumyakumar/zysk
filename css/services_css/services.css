@@ -1,0 +1,9 @@
+.highlight{
+  font-style: italic;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.content-width{
+  max-width: 24rem;
+}

@@ -4,77 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-      body{
-        border: .5rem solid #343a40;
-        border-bottom: 0;
-        border-top: 0;
-        min-height: 100vh;
-        font-family: sans-serif;
-        }
-      .header{
-        font-size: 50px;
-        }
-      .bor{
-        border-bottom: 8px #dc3545 solid;
-        width: 6%;
-        }
-      .bor-sub{
-        border-bottom: 8px #dc3545 solid;
-        width: 3%;
-        }
-        .navbar-nav > li{
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-        .btn{
-          font-weight: 800;
-          width: 11em;
-        }
-        .btn-dark{
-          color: #84f3ec;
-        }
-        .btn-danger{
-          color: black;
-        }
-        .img-fluid{
-          border-radius: 6px;
-        }
-        .title{
-          text-transform: uppercase;
-          font-size: 15px;
-          font-weight: 800;
-          color: black;
-          margin-bottom: 8px;
-        }
-        .text-dark{
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-        p{
-          font-size: 15px;
-          font-weight: 540;
-        }
-        .footer{
-          color: #84f3ec;
-        }
-        .illustration {
-          max-height: 16rem;
-          max-width: 24rem;
-        }
-        .highlight{
-          font-style: italic;
-          font-size: 20px;
-          font-family: monospace;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact_css/contact.css">
     <title>Zysk Technologies</title>
-    <link rel="icon" href="zysklogo.jpg" type="image/icon type">
+    <link rel="icon" href="../images/zysklogo.jpg" type="image/icon type">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3">
-      <a class="navbar-brand" href="zysk.html">
-        <img src="zysk.jpg" alt="zysk" />
+      <a class="navbar-brand" href="../zysk.html">
+        <img src="../images/zysk.jpg" alt="zysk" />
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navMain">
         <span class="navbar-toggler-icon"></span>
@@ -83,7 +21,7 @@
         <div class="collapse navbar-collapse font-weight-bold ml-auto" id="navMain">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="zysk.html">Home</a>
+              <a class="nav-link" href="../zysk.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -91,12 +29,12 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="websites.html">websites</a>
-                <a class="dropdown-item" href="#">custom application</a>
-                <a class="dropdown-item" href="#">frontend development</a>
-                <a class="dropdown-item" href="#">QA Service</a>
-                <a class="dropdown-item" href="#">Hybrid App Development</a>
-                <a class="dropdown-item" href="#">Support & maintainance</a>
+                <a class="dropdown-item" href="services/websites.html">websites</a>
+                <a class="dropdown-item" href="services/custom_appli.html">custom application</a>
+                <a class="dropdown-item" href="services/frontend_develop.html">frontend development</a>
+                <a class="dropdown-item" href="services/quality_service.html">QA Service</a>
+                <a class="dropdown-item" href="services/hybrid_app.html">Hybrid App Development</a>
+                <a class="dropdown-item" href="services/support.html">Support & maintainance</a>
               </div>
             </li>
             <li class="nav-item">
@@ -106,12 +44,12 @@
         </div>
     </nav>
 
-    <section class="container py-4">
+    <section class="container py-5">
       <div class="row d-flex  flex-wrap justify-content-around">
         <div class="col-lg-6">
           <h1 class="font-weight-bold d-lg-block">Say Hello!</h1>
-          <div class="bor d-lg-block d-none mb-3"></div>
-          <p class="highlight">
+          <div class="underline-m d-lg-block d-none mb-3"></div>
+          <p class="description highlight">
           We love coffee and good conversations, if you'd like to meet us, feel free to drop by.
           </p>
           <div class="gmap">
@@ -122,21 +60,21 @@
         </div>
         </div>
         <div class="col-lg-6">
-          <h1 class="font-weight-bold d-lg-block d-none">Write to Us!</h1>
-          <div class="bor d-lg-block mb-3"></div>
+          <h1 class="font-weight-bold d-lg-block">Write to Us!</h1>
+          <div class="underline-m d-lg-block mb-3"></div>
           <form>
-           <label for="name" class="title">Your Name</label>
+           <label for="name" class="form-title">Your Name</label>
            <input type="text" class="form-control" id="name" name="name" placeholder="Saumya Kumar">
            <br />
-           <label for="email" class="title">Email ID</label>
+           <label for="email" class="form-title">Email ID</label>
            <input type="email" class="form-control" id="email" name="email" placeholder="test@example.com">
            <br />
-           <label for="mobile" class="title">Phone Number</label>
+           <label for="mobile" class="form-title">Phone Number</label>
            <input type="number" class="form-control" id="mobile" name="mobile" placeholder="xxxxx xxxxx">
            <br />
-           <label for="message" class="title">Message</label>
+           <label for="message" class="form-title">Message</label>
            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Please enter your message"></textarea>
-
+           <br />
            <a href="about.html" class="btn btn-dark" type="type">Submit</a>
           </form>
         </div>
@@ -147,7 +85,7 @@
    &copy; 2019 Zysk Technologies
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

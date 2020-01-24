@@ -1,0 +1,10 @@
+.count{
+  color: #dc3545;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.boxing {
+  max-width: 24rem;
+  margin-right: 50px;
+}
